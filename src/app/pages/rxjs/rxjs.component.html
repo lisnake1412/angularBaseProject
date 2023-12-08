@@ -1,0 +1,30 @@
+<p>rxjs demo!</p>
+<div class="wrapper">
+  <h3>1)Observable</h3>
+  <p>
+    <span
+      >Stream flow(Xem log để thấy time flow): <br />-->(1s: Observable
+      Subcribed) <br />
+      -->(3s: Observer Completed) <br />-->(5s: Observable Unsubcrible)
+      <br />-->(10s: Clear function Interval: xem log để thấy Interval
+      chạy)</span
+    >
+  </p>
+  <h4>&nbsp;Thời gian: {{ countIncrease }}s</h4>
+  <h4>&nbsp;Trạng thái: {{ intervalState }}</h4>
+  <br />
+  <h3>2)BehaviorSubject</h3>
+  <p>Chọn số để thay đổi giá trị tổng của BehaviorSubject trong 1s</p>
+  <button
+    *ngFor="let number of numberList | async"
+    (click)="changeBehaviorNumber(number)"
+  >
+    {{ number }}
+  </button>
+  <span> --> {{ currentNumber | async }}</span>
+  <br>
+  <br>
+  <h3>3)MergeMap</h3>
+  <button #mergeMapDemo>add Observable</button> <span> --> Thêm Observable đếm từ 0 đến 10, ấn nhiều lần để ghép nhiều Observable</span>
+  <p>-->{{ mergeMapDataArray | json}}</p>
+</div>

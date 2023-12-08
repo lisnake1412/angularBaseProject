@@ -1,1 +1,71 @@
-/* You can add global styles to this file, and also import other style files */
+
+@import url("https://fonts.googleapis.com/css?family=Inter:700,400|DM+Sans:500|Poppins:500");
+:root {
+    --primaryColor: #250942;
+    //default layout
+    --contentMaxWidth: 1280px;
+    --textOpacity: 1;
+    --tw-bg-opacity: 1;
+    --primaryFont:  Inter, DM Sans, Verdana, Geneva, Tahoma, sans-serif;
+    --primaryFontSize: 1rem;
+    --primaryTextFontSize:20px;
+    --primaryGradientColor:linear-gradient(to left, #7451FE, #D15EF0, #FF00E3);
+    --primaryTextOpacity: 1;
+    --h2FontSize: 2rem;
+    --containerMargin: 3rem 0;
+    --contentMargin: 50px 0 50px 0;
+    --headerHeight: 100px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+   margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family:  var(--primaryFont);
+    font-size: var(--primaryFontSize);
+    color: black;
+    line-height: inherit;
+}
+
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+    cursor: pointer;
+}
+
+li {
+    list-style-type: none;
+}
+
+input {
+    border-radius: 5px;
+    border: 1px solid #000;
+    height: 25px;
+    padding: 0 5px;
+    &:focus {
+        outline: none;
+        
+    }
+}
+
+button {
+    padding: 0 5px;
+    outline: none;
+    border: 1px solid #000;
+    height: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    &:hover {
+        opacity: 0.9;
+    }
+}

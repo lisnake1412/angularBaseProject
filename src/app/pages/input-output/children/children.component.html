@@ -1,0 +1,8 @@
+<div class="wrapper">
+    <h3>Children component</h3>
+    <p> --> Dữ liệu được nhận từ Parent </p>
+    <input [value]="inputDecoratorData">
+    <p> <-- Dữ liệu được gửi sang Parent  </p>
+    <input [ngModel]="inputData"  (ngModelChange)="handleInputData($event)">
+</div>
+
