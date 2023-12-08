@@ -1,0 +1,12 @@
+<p>input-output demo!</p>
+<div class="wrapper">
+    
+    <div class="container">
+        <h3>Parent Component</h3>
+        <p>Dữ liệu được gửi sang Children --></p>
+        <input [(ngModel)]="getInputData">
+        <p>Dữ liệu được nhận từ Children <-- </p>
+        <input [value]="receivedData">
+    </div>
+    <app-children [inputDecoratorData]="getInputData" (outputDecoratorData)="getOutputData($event)"></app-children>
+</div>

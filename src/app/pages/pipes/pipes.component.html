@@ -1,0 +1,46 @@
+<p>pipes demo!</p>
+
+<div class="wrapper">
+  <div class="container">
+    <div class="data-list">
+      <p>Date pipe</p>
+      <span>{{ currentDate }}</span>
+      <span class="pipe"> {{ currentDate | date }}</span>
+    </div>
+    <div class="data-list">
+      <p>LowerCasePipe </p>
+      <span>{{upperText}}</span>
+      <span class="pipe">{{upperText | lowercase}} </span>
+    </div>
+    <div class="data-list">
+      <p>UpperCasePipe</p>
+      <span>{{lowerText}}</span>
+      <span class="pipe">{{lowerText | uppercase}} </span>
+    </div>
+    <div class="data-list">
+      <p>CurrencyPipe</p>
+      <span>{{currency}}</span>
+      <span class="pipe">{{currency | currency}}</span>
+    </div>
+    <div class="data-list">
+      <p>DecimalPipe</p>
+      <span>{{decimal}}</span>
+      <span class="pipe">{{decimal | number}}</span>
+    </div>
+    <div class="data-list">
+      <p>JsonPipe</p>
+      <span>{{jsondemo}}</span>
+      <span class="pipe">{{jsondemo | json}}</span>
+    </div>
+    <div class="data-list">
+      <p>AsyncPipe</p>
+      <span>1s tăng 1 số</span>
+      <span class="pipe">{{count | number}}</span>
+    </div>
+    <div class="data-list">
+        <p>customPipe</p>
+        <input placeholder="nhập số điện thoại..." [(ngModel)]="phoneNumber">
+        <span class="pipe">{{phoneNumber | FormatPhoneNumber}}</span>
+      </div>
+  </div>
+</div>

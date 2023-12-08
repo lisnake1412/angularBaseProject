@@ -1,0 +1,39 @@
+.wrapper {
+    margin-left: 20px;
+  }
+  
+  .container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: rgb(221, 224, 231) 0px 8px 32px;
+  }
+  
+  .data-list {
+    display: flex;
+    justify-content: space-between;
+  
+    padding: 5px 10px;
+    background-color: #f5b7b1;
+  
+    &:nth-child(even) {
+      background-color: #e74c3c;
+      color: #ecf0f1;
+    }
+  }
+  
+  .done-icon {
+    display: inline-block;
+    width: 15px;
+    aspect-ratio: 1/1;
+  }
+  
+  .button-wrapper {
+    > button {
+      margin-left: 5px;
+    }
+  }
+  

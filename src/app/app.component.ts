@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular16-base-project';
+  routes: any = [
+    {path:'home', name:'homepage'},
+    {path:'ngIf-ngFor', name:'ngIf and ngFor'},
+    {path:'ngModel', name:'ngModel'},
+    {path:'input-output', name:'inOutPut'},
+    {path:'rxjs', name:'Rxjs'}
+  ];
 }
